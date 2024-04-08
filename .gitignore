@@ -13,8 +13,8 @@
 
 # misc
 .idea
-node_modules
-kanbas-node-server-app
+node_modules/
+kanbas-node-server-app/
 .DS_Store
 .env.local
 .env.development.local
