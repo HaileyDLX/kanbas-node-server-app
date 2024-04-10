@@ -12,9 +12,9 @@
 /build
 
 # misc
-.idea
+/.idea
 node_modules/
-kanbas-node-server-app/
+/kanbas-node-server-app
 .DS_Store
 .env.local
 .env.development.local
