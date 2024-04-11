@@ -15,12 +15,16 @@ mongoose.connect(CONNECTION_STRING);
 
 //mongoose.connect("mongodb://127.0.0.1:27017/kanbas");
 const app = express();
-app.use(
-    cors({
-             credentials: true,
-             origin: [process.env.FRONTEND_URL ,'https://66172bdbd2eb21091d37eda2--kanbas-hailey-a6.netlify.app'],
-         })
-);
+// app.use(
+//     cors({
+//              credentials: true,
+//              origin: [process.env.FRONTEND_URL ,'https://66172bdbd2eb21091d37eda2--kanbas-hailey-a6.netlify.app'],
+//          })
+// );
+app.use(cors({
+                 origin: 'https://66172bdbd2eb21091d37eda2--kanbas-hailey-a6.netlify.app',
+                 credentials: true
+             }));
 const sessionOptions = {
     secret: process.env.SESSION_SECRET,
     resave: false,
