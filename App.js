@@ -18,7 +18,7 @@ const app = express();
 app.use(
     cors({
              credentials: true,
-             origin: process.env.FRONTEND_URL
+             origin: [process.env.FRONTEND_URL ,'https://66172bdbd2eb21091d37eda2--kanbas-hailey-a6.netlify.app'],
          })
 );
 const sessionOptions = {
