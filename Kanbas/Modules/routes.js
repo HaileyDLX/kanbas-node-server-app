@@ -26,7 +26,7 @@ function ModuleRoutes(app) {
         console.log("course: " + course)
         const courseId =  course.id.toString();
         console.log("courseId: " + courseId)
-        const modules = await dao.findModulesForCourse(courseId);
+        const modules = await dao.findModuleByCid(courseId);//db.modules.filter((m) => m.course === cid);
         // const modules = db.modules
         //     .filter((m) => m.course === cid);
         console.log("modules: " + modules)

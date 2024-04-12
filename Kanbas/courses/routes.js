@@ -1,3 +1,4 @@
+
 import * as dao from "./dao.js";
 import mongoose from 'mongoose';
 //import Database from "../Database/index.js";
@@ -18,7 +19,7 @@ export default function CourseRoutes(app) {
         const course = req.body;
         course.id = course.number;
         course._id = new mongoose.Types.ObjectId();
-       // course.image = 'images/reactjs.png';
+        // course.image = 'images/reactjs.png';
         await dao.createCourse(course);
 
         res.send(course);

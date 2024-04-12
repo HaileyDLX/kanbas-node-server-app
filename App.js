@@ -1,3 +1,4 @@
+
 import express from 'express';
 import Hello from './hello.js';
 import Lab5 from './Lab5.js';
@@ -18,11 +19,11 @@ const app = express();
 // app.use(
 //     cors({
 //              credentials: true,
-//              origin: [process.env.FRONTEND_URL ,'https://66172bdbd2eb21091d37eda2--kanbas-hailey-a6.netlify.app'],
+//              origin: process.env.FRONTEND_URL
 //          })
 // );
 app.use(cors({
-                 origin: 'https://66172bdbd2eb21091d37eda2--kanbas-hailey-a6.netlify.app',
+                 origin: true,
                  credentials: true
              }));
 const sessionOptions = {
